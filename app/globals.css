@@ -59,11 +59,24 @@
   }
 }
 
+
+.body {
+  font-family: 'Nunito Sans Variable', sans-serif;
+}
+
+.bodyTwo {
+    font-family: 'Rubik Variable', sans-serif;
+}
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .wrapper {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
   }
 }
