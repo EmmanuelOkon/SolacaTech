@@ -54,6 +54,89 @@ export const navigation = {
   ],
 };
 
+export const categories = [
+  {
+    id: 1,
+    name: "Accessories",
+  },
+  {
+    id: 2,
+    name: "Clothing and Fashion",
+  },
+  {
+    id: 3,
+    name: "Food and Beverages",
+  },
+  {
+    id: 4,
+    name: "Office Supplies and Stationeries",
+  },
+  {
+    id: 5,
+    name: "Cosmetics and Beauty",
+  },
+  {
+    id: 6,
+    name: "Musical Instruments",
+  },
+  {
+    id: 7,
+    name: "Sporting Facilities",
+  },
+  {
+    id: 8,
+    name: "Toys and Games",
+  },
+  {
+    id: 9,
+    name: "Arts and Crafts",
+  },
+  {
+    id: 10,
+    name: "Antiques and Collectibles",
+  },
+  {
+    id: 11,
+    name: "Babies and Toddlers",
+  },
+  {
+    id: 12,
+    name: "Cameras and Optics",
+  },
+  {
+    id: 13,
+    name: "Electronics",
+  },
+  {
+    id: 14,
+    name: "Furniture and Decor",
+  },
+  {
+    id: 15,
+    name: "Vehicle Parts",
+  },
+  {
+    id: 16,
+    name: "Pet Supplies",
+  },
+  {
+    id: 17,
+    name: "Health and Medic",
+  },
+  {
+    id: 18,
+    name: "Home and Garden",
+  },
+  {
+    id: 19,
+    name: "Luggage and Bags",
+  },
+  {
+    id: 20,
+    name: "Mobile and Tablets",
+  },
+];
+
 export const products = [
   {
     id: 1,

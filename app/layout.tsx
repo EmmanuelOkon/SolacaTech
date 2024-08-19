@@ -7,8 +7,7 @@ import "@fontsource-variable/nunito-sans";
 
 // Supports weights 300-900
 import "@fontsource-variable/rubik";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import "@fontsource/jomhuria";
 import AppContainer from "@/components/AppContainer";
 
 export const metadata: Metadata = {

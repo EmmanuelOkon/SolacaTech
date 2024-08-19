@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
       <div className="wrapper ">
         <div className="flex grid-cols-1 md:grid-cols-3 justify-between ">
           <div className="mb-6 md:mb-0 text-center md:text-left md:col-span-1 ">
-            <h1 className="text-xl font-semibold">Demo</h1>
-            <p className="text-sm">
+            <h1 className="text-3xl font-bold footerLogo">Demo</h1>
+            <p className="text-sm body flex flex-col ">
               Developed by{" "}
               <Link href="#" className="font-bold text-blue-600">
-                SOLACTECH
+                <Icons.LogoColor /> 
               </Link>
             </p>
             <button className="mt-4 bg-gray-800 text-white px-4 py-2 rounded">

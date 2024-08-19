@@ -68,6 +68,10 @@
     font-family: 'Rubik Variable', sans-serif;
 }
 
+.footerLogo {
+  font-family: 'Jomhuria', system-ui;
+}
+
 @layer base {
   * {
     @apply border-border;
