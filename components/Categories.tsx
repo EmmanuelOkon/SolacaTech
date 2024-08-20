@@ -1,3 +1,5 @@
+// "use client";
+
 import * as React from "react";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -11,11 +13,33 @@ import {
 import { categories } from "@/static";
 
 export function Categories() {
+  // const [slidesToScroll, setSlidesToScroll] = React.useState(4);
+
+  // React.useEffect(() => {
+  //   const updateSlidesToScroll = () => {
+  //     if (window.innerWidth < 768) {
+  //       // Mobile screens
+  //       setSlidesToScroll(1);
+  //     } else {
+  //       setSlidesToScroll(4);
+  //     }
+  //   };
+
+  //   // Set the initial value
+  //   updateSlidesToScroll();
+
+  //   // Add event listener to handle screen resizing
+  //   window.addEventListener("resize", updateSlidesToScroll);
+
+  //   // Clean up event listener on component unmount
+  //   return () => window.removeEventListener("resize", updateSlidesToScroll);
+  // }, []);
+
   return (
     <Carousel
       opts={{
         align: "start",
-        slidesToScroll: 4
+        slidesToScroll: 1,
       }}
       className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  "
     >
@@ -31,7 +55,7 @@ export function Categories() {
         {categories.map((item) => (
           <CarouselItem
             key={item.id}
-            className="md:basis-1/2 lg:basis-1/4 rounded-none "
+            className="basis-1/1 md:basis-1/2 lg:basis-1/4 rounded-none "
           >
             <div className="p-1">
               <Card

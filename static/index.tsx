@@ -1,3 +1,4 @@
+import { ProductProps } from "@/interface";
 import { Icons } from "@/public/assets/icon";
 
 export const navigation = {
@@ -134,6 +135,92 @@ export const categories = [
   {
     id: 20,
     name: "Mobile and Tablets",
+  },
+];
+
+export const menClothings: ProductProps[] = [
+  {
+    id: 1,
+    name: "Men's Fleece Pullover Hoodie Sweatshirt",
+    price: 10000,
+    rating: 4.2,
+    vendor: "Esther Ubi",
+    imageUrl: "/assets/images/men1.png",
+  },
+  {
+    id: 2,
+    name: "Men's Fleece Pullover Hoodie Sweatshirt",
+    price: 10000,
+    rating: 4.2,
+    vendor: "Esther Ubi",
+    imageUrl: "/assets/images/men2.jpg",
+  },
+  {
+    id: 3,
+    name: "Men's Fleece Pullover Hoodie Sweatshirt",
+    price: 10000,
+    rating: 4.2,
+    vendor: "Esther Ubi",
+    imageUrl: "/assets/images/men3.jpg",
+  },
+  {
+    id: 4,
+    name: "Men's Fleece Pullover Hoodie Sweatshirt",
+    price: 10000,
+    rating: 4.2,
+    vendor: "Esther Ubi",
+    imageUrl: "/assets/images/men4.webp",
+  },
+  {
+    id: 5,
+    name: "Men's Fleece Pullover Hoodie Sweatshirt",
+    price: 10000,
+    rating: 4.2,
+    vendor: "Esther Ubi",
+    imageUrl: "/assets/images/men5.jpg",
+  },
+];
+
+export const topDeals: ProductProps[] = [
+  {
+    id: 1,
+    name: `Apple MacBook Pro 16" Laptop - M2 Max Chip - 32GB Memory `,
+    price: 10000,
+    rating: 4.2,
+    vendor: "Esther Ubi",
+    imageUrl: "/assets/images/deals1.jpg",
+  },
+  {
+    id: 2,
+    name: "Apple Vision Pro 2",
+    price: 10000,
+    rating: 4.2,
+    vendor: "Esther Ubi",
+    imageUrl: "/assets/images/deals2.jpg",
+  },
+  {
+    id: 3,
+    name: "Apple iPhone 11, 64GB, Black Smartphone",
+    price: 10000,
+    rating: 4.2,
+    vendor: "Esther Ubi",
+    imageUrl: "/assets/images/deals3.jpg",
+  },
+  {
+    id: 4,
+    name: "Apple iPad Air 2 16GB Wifi only, Grey",
+    price: 10000,
+    rating: 4.2,
+    vendor: "Esther Ubi",
+    imageUrl: "/assets/images/deals4.jpg",
+  },
+  {
+    id: 5,
+    name: "Samsung Galaxy Note20 5G N981U 128GB",
+    price: 10000,
+    rating: 4.2,
+    vendor: "Esther Ubi",
+    imageUrl: "/assets/images/deals5.jpg",
   },
 ];
 
