@@ -195,6 +195,7 @@ export const products: Product[] = [
     vendor: "Esther Ubi",
     imageUrl: "/assets/images/men1.png",
     category: "Men Clothing",
+    originalPrice: "150,000.00",
   },
   {
     id: 2,
@@ -234,7 +235,7 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    name: `Apple MacBook Pro 16" Laptop - M2 Max Chip - 32GB Memory `,
+    name: `Apple MacBook Pro 16 Laptop M2 Max Chip 32GB Memory `,
     price: 10000,
     rating: 4.2,
     vendor: "Esther Ubi",
@@ -252,7 +253,7 @@ export const products: Product[] = [
   },
   {
     id: 8,
-    name: "Apple iPhone 11, 64GB, Black Smartphone",
+    name: "Apple iPhone 11 64GB Black Smartphone",
     price: 10000,
     rating: 4.2,
     vendor: "Esther Ubi",
@@ -261,7 +262,7 @@ export const products: Product[] = [
   },
   {
     id: 9,
-    name: "Apple iPad Air 2 16GB Wifi only, Grey",
+    name: "Apple iPad Air 2 16GB Wifi only Grey",
     price: 10000,
     rating: 4.2,
     vendor: "Esther Ubi",

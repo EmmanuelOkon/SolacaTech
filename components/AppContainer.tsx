@@ -1,16 +1,17 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { AppContainerProps } from "@/interface";
 
-interface AppContainerProps {
-  children: React.ReactNode;
-}
+
 
 const AppContainer = ({ children }: AppContainerProps) => {
   return (
-    <section >
+    <section>
       <Navbar />
-      {children}
+      <div className="bg-gradient-to-r from-purple-100 to-pink-100">
+        {children}
+      </div>
       <Footer />
     </section>
   );

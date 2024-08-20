@@ -1,5 +1,5 @@
-import { products } from "@/static";
 import React from "react";
+import { products } from "@/static";
 import ProductCard from "./ProductCard";
 
 const TopDeals: React.FC = () => {

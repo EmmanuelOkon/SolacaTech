@@ -20,7 +20,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => (
           <Icons.Heart className="text-white" />
         </button>
         <button className="p-1 bg-white rounded-full shadow">
-          <Icons.Cart />
+          <Icons.Cart className="text-[#333333] hover:text-black " />
         </button>
       </div>
     </div>
