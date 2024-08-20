@@ -14,7 +14,7 @@ export interface Product {
 }
 
 export interface VendorCardProps {
-  name: string;
+  name?: string;
   shopName: string;
   rating: number;
   totalRatings: number;
