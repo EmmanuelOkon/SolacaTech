@@ -1,5 +1,6 @@
+import AppShowcase from "@/components/AppShowcase";
 import { Categories } from "@/components/Categories";
-import ProductCategory from "@/components/Clothings";
+import MenClothing from "@/components/MenClothing";
 import Hero from "@/components/Hero";
 import TopDeals from "@/components/TopDeals";
 
@@ -9,8 +10,9 @@ export default function Home() {
       <div className=" bg-[#FAF4FF] ">
         <Hero />
         <Categories />
-        <ProductCategory />
+        <MenClothing />
         <TopDeals />
+        <AppShowcase />
       </div>
     </>
   );

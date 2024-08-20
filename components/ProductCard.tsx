@@ -1,11 +1,14 @@
-import { ProductProps } from "@/interface";
+import { Product } from "@/interface";
 import { Icons } from "@/public/assets/icon";
-import { menClothings } from "@/static";
-import React from "react";
+import Link from "next/link";
 
-
-const ProductCard: React.FC<{ product: ProductProps }> = ({ product }) => (
-  <div className="bg-white shadow rounded-lg overflow-hidden">
+const ProductCard: React.FC<{ product: Product }> = ({ product }) => (
+  <Link
+    href={`/customer/product/${product.name
+      .replace(/\s+/g, "-")
+      .toLowerCase()} `}
+    className="bg-white shadow rounded-lg overflow-hidden"
+  >
     <div className="relative">
       <img
         src={product.imageUrl}
@@ -32,29 +35,7 @@ const ProductCard: React.FC<{ product: ProductProps }> = ({ product }) => (
       </div>
       <p className="text-sm text-gray-500 mt-1">Vendor: {product.vendor}</p>
     </div>
-  </div>
+  </Link>
 );
 
-const ProductCategory: React.FC = () => {
-  
-
-  return (
-    <div className="p-4">
-      <div className="wrapper ">
-        <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold text-gray-800">Top Men Clothes</h2>
-          <a href="#" className="text-blue-600 hover:text-blue-800">
-            See All
-          </a>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-          {menClothings.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default ProductCategory;
+export default ProductCard;
