@@ -2,11 +2,12 @@
 
 import { useParams } from "next/navigation";
 
-import { products } from "@/static";
+import { products, reviews } from "@/static";
 import ProductInfo from "@/components/ProductInfo";
 
 import VendorCard from "@/components/VendorCard";
 import RatingDistribution from "@/components/RatingDistribution";
+import ReviewCard from "@/components/ReviewCard";
 
 const ProductDetail = () => {
   const { productSlug } = useParams();
@@ -133,7 +134,9 @@ const ProductDetail = () => {
             </div>
 
             <div className="rounded-[15px]  ">
-              <h1 className="font-semibold text-[24px] pb-2 body ">Customers Review</h1>
+              <h1 className="font-semibold text-[24px] pb-2 body ">
+                Customers Review
+              </h1>
               <RatingDistribution
                 ratings={ratingsData}
                 totalReviews={totalReviews}
@@ -141,7 +144,20 @@ const ProductDetail = () => {
               />
             </div>
 
-            <div className="" >lastcrad</div>
+            <div className="w-full grd ">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {reviews.map((review, index) => (
+                  <ReviewCard
+                    key={index}
+                    name={review.name}
+                    role={review.role}
+                    review={review.review}
+                    rating={review.rating}
+                    avatarUrl={review.avatarUrl}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 

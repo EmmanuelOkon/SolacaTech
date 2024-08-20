@@ -1,15 +1,7 @@
-import { Icons } from "@/public/assets/icon";
 import Image from "next/image";
-import React from "react";
+import { Icons } from "@/public/assets/icon";
+import { RatingDistributionProps } from "@/interface";
 
-interface RatingDistributionProps {
-  ratings: {
-    stars: number;
-    count: number;
-  }[];
-  totalReviews: number;
-  averageRating: number;
-}
 
 const RatingDistribution: React.FC<RatingDistributionProps> = ({
   ratings,

@@ -21,3 +21,20 @@ export interface VendorCardProps {
   distance: number;
   freeDelivery: boolean;
 }
+
+export interface RatingDistributionProps {
+  ratings: {
+    stars: number;
+    count: number;
+  }[];
+  totalReviews: number;
+  averageRating: number;
+}
+
+export interface ReviewProps {
+  name: string;
+  role: string;
+  review: string;
+  rating: number;
+  avatarUrl: string;
+}

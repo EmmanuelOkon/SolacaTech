@@ -28,7 +28,7 @@ const VendorCard: React.FC<VendorCardProps> = ({
             </p>
           </div>
           <div className="flex items-center mt-1">
-            <div className="flex items-center text-yellow-500">
+            <div className="flex items-center">
               <Image
                 src="/assets/images/applerate.png"
                 width={100}
