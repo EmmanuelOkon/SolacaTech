@@ -5,10 +5,10 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-100 text-gray-700 py-8 ">
+    <footer className="bg-gray-100 text-gray-700 py-8 mt-10 ">
       <div className="wrapper ">
-        <div className="flex grid-cols-1 md:grid-cols-3 justify-between ">
-          <div className="mb-6 md:mb-0 text-center md:text-left md:col-span-1 ">
+        <div className="flex flex-col md:flex-row grid-cols-1 md:grid-cols-3 justify-between ">
+          <div className="mb-6 md:mb-0 text-left md:text-left md:col-span-1 ">
             <h1 className="text-3xl font-bold footerLogo">Demo</h1>
             <p className="text-sm body flex flex-col ">
               Developed by{" "}
@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
             </button>
           </div>
 
-          <div className="grid grid-col-1 md:grid-cols-3 gap-10 space-x-8 col-span-3 justify-end ">
-            <div className="col-span-1">
+          <div className="flex flex-wrap md:grid grid-col-1 md:grid-cols-3 gap-10 md:space-x-8 col-span-3 md:justify-end ">
+            <div className="text-left col-span-1">
               <h2 className="font-semibold mb-2">Demo</h2>
 
               <ul className="text-sm flex flex-col space-y-2">
@@ -76,14 +76,14 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="px-4 mt-6 flex flex-col md:flex-row justify-between items-center text-sm border-t pt-4">
-          <div>
-            <p className="text-center md:text-left mb-4 md:mb-0">
+        <div className="mt-6 flex flex-col-reverse md:flex-row justify-between items-center text-sm border-t pt-4">
+          <div className="" >
+            <p className="text-left md:text-left">
               © 2024 Demo. All Rights Reserved.
             </p>
           </div>
-          <div className="flex items-center gap-[5rem] md:justify-end mb-4 md:mb-0">
-            <div className="flex items-center gap-5 ">
+          <div className="flex w-full justify-between md:items-center md:gap-[5rem] md:justify-end mb-4 md:mb-0">
+            <div className="flex justify-start itemscenter gap-2 md:gap-5 ">
               {navigation.social.map((item) => {
                 const IconComponent = item.icon;
                 return (
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
                 );
               })}
             </div>
-            <div className="flex justify-center md:justify-end space-x-4">
+            <div className="flex justify-center md:justify-end gap-2 md:gap-0 md:space-x-4">
               <a href="#" className="text-gray-600 hover:text-gray-800">
                 $ USD
               </a>

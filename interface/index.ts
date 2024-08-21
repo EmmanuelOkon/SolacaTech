@@ -38,3 +38,11 @@ export interface ReviewProps {
   rating: number;
   avatarUrl: string;
 }
+
+export interface HomePodProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  ctaText: string;
+  ctaLink: string;
+}

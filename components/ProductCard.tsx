@@ -28,7 +28,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => (
       <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
       <p className="text-gray-600">₦{product.price.toLocaleString()}</p>
       <div className="flex items-center mt-1">
-        <Icons.Rating />
+        <Icons.Rating className="text-[#FCA617] w-4 h-4  " />
         <span className="ml-1 text-gray-600">
           {product.rating.toFixed(1)}(32){" "}
         </span>

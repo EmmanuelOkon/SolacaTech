@@ -65,7 +65,11 @@
 }
 
 .bodyTwo {
-    font-family: 'Rubik Variable', sans-serif;
+  font-family: 'Rubik Variable', sans-serif;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
 }
 
 .footerLogo {
@@ -76,6 +80,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

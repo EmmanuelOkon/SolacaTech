@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 
-// Supports weights 200-900
 import "@fontsource-variable/nunito-sans";
 
-// Supports weights 300-900
 import "@fontsource-variable/rubik";
 import "@fontsource/jomhuria";
+import "@fontsource/poppins";
 import AppContainer from "@/components/AppContainer";
+import OnlineChat from "@/components/OnlineChat";
 
 export const metadata: Metadata = {
   title: "SolacaTech App",
@@ -23,7 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <AppContainer>{children}</AppContainer>
+        <AppContainer>
+          <OnlineChat />
+          {children}
+        </AppContainer>
       </body>
     </html>
   );
