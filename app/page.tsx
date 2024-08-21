@@ -6,12 +6,13 @@ import TopDeals from "@/components/TopDeals";
 import OnlineChat from "@/components/OnlineChat";
 import Favourite from "@/components/Favourite";
 import TopSports from "@/components/TopSports";
+import TopVendors from "@/components/TopVendors";
 
 export default function Home() {
   return (
     <>
       <OnlineChat />
-      <div className=" bg-[#FAF4FF] ">
+      <div className="">
         <Hero />
         <Categories />
         <MenClothing />
@@ -19,6 +20,7 @@ export default function Home() {
         <AppShowcase />
         <Favourite />
         <TopSports />
+        <TopVendors />
       </div>
     </>
   );

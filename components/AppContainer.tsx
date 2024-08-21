@@ -9,7 +9,7 @@ const AppContainer = ({ children }: AppContainerProps) => {
   return (
     <section>
       <Navbar />
-      <div className="bg-gradient-to-r from-purple-100 to-pink-100">
+      <div className="pb-10 bg-gradient-to-r from-purple-100 to-pink-100">
         {children}
       </div>
       <Footer />

@@ -1,3 +1,4 @@
+
 export interface AppContainerProps {
   children: React.ReactNode;
 }
@@ -15,10 +16,10 @@ export interface Product {
 
 export interface VendorCardProps {
   name?: string;
-  shopName: string;
+  shopName?: string;
   rating: number;
   totalRatings: number;
-  distance: number;
+  distance?: number;
   freeDelivery: boolean;
 }
 
@@ -45,4 +46,23 @@ export interface HomePodProps {
   imageUrl: string;
   ctaText: string;
   ctaLink: string;
+}
+
+export interface VendorInfoProps {
+  // vendor: VendorCardProps;
+  // products: Product[];
+  // reviews: ReviewProps[];
+  // ratingDistribution: RatingDistributionProps;
+  // contact: {
+  //   phone: string;
+  //   address: string;
+  // };
+  // description: string;
+
+  name: string;
+  rating: number;
+  numRatings: number;
+  address: string;
+  phone: string;
+  description: string;
 }

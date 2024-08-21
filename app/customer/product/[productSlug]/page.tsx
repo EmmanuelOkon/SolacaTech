@@ -8,14 +8,11 @@ import ProductInfo from "@/components/ProductInfo";
 import VendorCard from "@/components/VendorCard";
 import RatingDistribution from "@/components/RatingDistribution";
 import ReviewCard from "@/components/ReviewCard";
+import ProductCard from "@/components/ProductCard";
 
 const ProductDetail = () => {
   const { productSlug } = useParams();
 
-  // Ensure the slug is correctly passed
-  console.log("Product Slug:", productSlug);
-
-  // Find the product based on the slug
   const product = products.find(
     (p) => p.name.replace(/\s+/g, "-").toLowerCase() === productSlug
   );
@@ -23,8 +20,6 @@ const ProductDetail = () => {
   if (!product) {
     return <div>Product not found.</div>;
   }
-
-  console.log("Product Details:", product);
 
   const ratingsData = [
     { stars: 5, count: 10 },
@@ -45,16 +40,7 @@ const ProductDetail = () => {
               <img
                 src={product.imageUrl}
                 alt={product.name}
-                //   className="w-full h-full object-cover "
                 className="flex items-end rounded-[14px] mx-auto my-10 max-w-[600px] max-h-[517px] object-cover"
-                style={
-                  {
-                    // backgroundImage: `${product.imageUrl}`,
-                    // backgroundSize: "cover",
-                    // backgroundPosition: "center",
-                    // backgroundRepeat: "no-repeat",
-                  }
-                }
               />
               <div className="text-[#333333] body px-8 py-3 ">
                 <p className="font-semibold text-[21px] pb-2  ">
@@ -178,6 +164,21 @@ const ProductDetail = () => {
             distance={2.07}
             freeDelivery={true}
           />
+        </div>
+      </div>
+      <div className="pt-10">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-2xl font-bold text-gray-800 body ">
+            Similar items you might like
+          </h2>
+          <a href="#" className="text-blue-600 hover:text-blue-800">
+            See All
+          </a>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          {products.slice(0, 10).map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
         </div>
       </div>
     </div>

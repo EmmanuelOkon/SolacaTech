@@ -13,28 +13,6 @@ import {
 import { categories } from "@/static";
 
 export function Categories() {
-  // const [slidesToScroll, setSlidesToScroll] = React.useState(4);
-
-  // React.useEffect(() => {
-  //   const updateSlidesToScroll = () => {
-  //     if (window.innerWidth < 768) {
-  //       // Mobile screens
-  //       setSlidesToScroll(1);
-  //     } else {
-  //       setSlidesToScroll(4);
-  //     }
-  //   };
-
-  //   // Set the initial value
-  //   updateSlidesToScroll();
-
-  //   // Add event listener to handle screen resizing
-  //   window.addEventListener("resize", updateSlidesToScroll);
-
-  //   // Clean up event listener on component unmount
-  //   return () => window.removeEventListener("resize", updateSlidesToScroll);
-  // }, []);
-
   return (
     <Carousel
       opts={{

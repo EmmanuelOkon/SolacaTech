@@ -68,7 +68,7 @@ const VendorCard: React.FC<VendorCardProps> = ({
         <div className="flex items-start gap-2">
           <Icons.Location />
           <div className="flex flex-col ">
-            {distance.toFixed(2)} Km
+            {distance?.toFixed(2)} Km
             <p className="text-[#474E63] ">Distance</p>
           </div>
         </div>
